@@ -1,0 +1,12 @@
+.time {
+    height: fit-content;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.videos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}

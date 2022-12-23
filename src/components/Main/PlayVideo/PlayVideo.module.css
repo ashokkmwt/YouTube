@@ -1,0 +1,217 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    background-color: #121212;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.leftSection {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.videoScreen {
+    width: 100%;
+    height: 80vh;
+}
+
+.logoBar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoBar p {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.channelLogo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.channelLogo img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    contain: size;
+}
+
+.videoDetails {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 1rem;
+    padding-top: 2rem;
+}
+
+.userComment {
+    width: 100%;
+    display: flex;
+}
+
+.noUser {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(116, 116, 116);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.commentInput {
+    min-width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.line {
+    width: 95%;
+    height: 0.1rem;
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.comment {
+    width: 100%;
+    height: 4rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.comment button {
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    padding: 0.8rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    background: rgb(49, 49, 49);
+}
+
+.myComments {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.rightSection {
+    width: 30%;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.chatHistory {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.chatHistory:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.rcmdVideo {
+    width: 100%;
+    height: 10rem;
+    margin-top: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.videoLogo {
+    width: 45%;
+    height: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.videoLogo img {
+    border-radius: 1rem;
+}
+
+.videoHeading {
+    width: 55%;
+    height: 100%;
+    color: #ffffff;
+    padding-left: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.videoHeading p {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width:900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftSection {
+        width: 90%;
+    }
+
+    .videoScreen {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .container {
+        padding: unset;
+    }
+
+    .rightSection {
+        width: 90%;
+    }
+
+    .videoScreen {
+        height: 30vh;
+    }
+
+}

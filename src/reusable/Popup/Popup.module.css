@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(56, 55, 55, 0.2);
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    color: #ffffff;
+}
+
+.popup {
+    width: 50rem;
+    height: 60%;
+    background-color: rgb(34, 34, 34);
+    border-radius: 1rem;
+    padding: 4rem;
+    text-align: left;
+    position: relative;
+}
+
+.popup span {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.popup p {
+    font-size: 1.5rem;
+}
+
+.closeImg {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.micBar {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.micImg {
+    width: 4.4rem;
+    height: 4.4rem;
+    cursor: pointer;
+}

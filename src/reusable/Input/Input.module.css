@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backArrow {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.inputBar {
+  height: 4rem;
+  border: 0.05rem solid rgb(76, 67, 67);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.inputBar input {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+  color: rgb(164, 147, 147);
+}
+
+.inputBar img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.searchIcon {
+  width: 6rem;
+  height: 4rem;
+  background-color: rgb(45, 35, 35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.05rem solid rgb(76, 67, 67);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  position: relative;
+}
+
+@media only screen and (max-width:600px) {
+  .inputBar {
+    width: 50%;
+  }
+}

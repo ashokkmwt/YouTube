@@ -1,0 +1,69 @@
+.sideHeaderComponent {
+  width: 27rem;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 2rem 1.2rem;
+  gap: 0.1rem;
+  overflow: hidden;
+}
+
+.sideHeaderComponent:hover {
+  overflow-y: scroll;
+}
+
+.topTabs {
+  width: 20.4rem;
+  min-height: 4rem;
+  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.topTabs:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.topTabs img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.topTabs p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 1.2rem;
+}
+
+.sideHeaderComponent::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.sideHeaderComponent::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1rem;
+}
+
+.sideHeaderComponent::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+.about {
+  width: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: gray;
+  font-weight: 500;
+}

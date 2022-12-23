@@ -1,0 +1,159 @@
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    gap: 2rem;
+    padding-top: 1.8rem;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0 0 4rem;
+    background-color: rgba(54, 54, 54, 0.5);
+}
+
+.left h1 {
+    width: 80%;
+    font-size: 3rem;
+}
+
+.left p {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.moreIcon {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(83, 82, 82);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreIcon img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.thumbnail {
+    width: 90%;
+    height: 30%;
+    border-radius: 1rem;
+}
+
+.thumbnail img {
+    border-radius: 1rem;
+}
+
+.buttonBar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playBtn,
+.shuffle {
+    width: 14rem;
+    height: 3.5rem;
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.playBtn:hover,
+.shuffle:hover {
+    background-color: rgba(227, 227, 227, 0.5);
+}
+
+.playBtn img,
+.shuffle img {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.shuffle {
+    background-color: rgba(112, 111, 111, 0.5);
+    color: white;
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1.8rem 0;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sortBtn {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+
+.sortBtn img {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+    .container {
+        height: 90vh;
+        overflow-y: scroll;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .left h1 {
+        font-size: 2rem;
+    }
+
+    .thumbnail {
+        height: 50%;
+    }
+
+    .right {
+        width: 100%;
+        overflow-y: unset;
+    }
+
+    .playBtn,
+    .shuffle {
+        width: 48%;
+    }
+
+    .moreIcon {
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+.video {
+    height: 12rem;
+    cursor: pointer;
+    display: flex;
+    border-radius: 1rem;
+    padding: 0.7rem 2rem;
+}
+
+.thumbnail {
+    width: 20rem;
+    background-color: #2b2a2a;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thumbnail img {
+    border-radius: 1rem;
+}
+
+.videoDetail {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.heading {
+    width: 70%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.heading h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.heading h5 {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.heading p {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.threeDotLogo {
+    display: none;
+    width: 2.4rem;
+    height: 2.4rem;
+}

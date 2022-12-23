@@ -1,0 +1,83 @@
+.video {
+    flex: 1;
+    flex-basis: 28rem;
+    max-width: 34rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.thumbnail img {
+    border-radius: 1.5rem;
+}
+
+.videoDetail {
+    width: 100%;
+    height: 10rem;
+    padding: 0.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+
+.videoLogo {
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.videoLogo img {
+    border-radius: 50%;
+}
+
+.heading {
+    width: 70%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.heading h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.heading h5 {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.heading p {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.threeDotLogo {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+@media only screen and (max-width:500px) {
+    .video {
+        max-width: unset;
+        width: 90%;
+    }
+
+    .thumbnail {
+        height: 25rem;
+    }
+
+    .videoDetail {
+        height: 15rem;
+        padding-top: 5rem;
+    }
+}

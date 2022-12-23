@@ -1,0 +1,15 @@
+.container {
+  width: fit-content;
+  position: absolute;
+  bottom: -6rem;
+  left: 0rem;
+  background-color: #707070;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.container h6 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}

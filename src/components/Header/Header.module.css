@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap");
+
+header {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  position: unset;
+  background-color: #121212;
+  padding: 1rem 1.6rem;
+}
+
+.left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.humberg img {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.humberg {
+  min-width: 3.8rem;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.humberg:hover {
+  background-color: rgb(45, 41, 41);
+
+}
+
+.youtubeLogo {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.ytLogo {
+  height: fit-content;
+  font-size: 2.6rem;
+  color: #ffffff;
+  position: relative;
+  font-family: "Teko", sans-serif;
+}
+
+.inLogo {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  right: -1rem;
+}
+
+.youtubeLogo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.middle {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.mic {
+  width: 3.8rem;
+  height: 3.8rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mic:hover {
+  background-color: rgb(45, 41, 41);
+  border-radius: 50%;
+}
+
+.mic img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.right img {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.profile {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.signIn {
+  min-width: 9rem;
+  height: 3.5rem;
+  border: 1px solid blue;
+  border-radius: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(119, 119, 244);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
