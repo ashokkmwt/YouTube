@@ -55,8 +55,8 @@ export default function Input({ showInput, setShowInput }) {
   return (
     <div className={styles.container}>
 
-      {showInput &&
-        <img
+      {(showInput && width <= 600) &&
+        < img
           className={styles.backArrow}
           width='24px'
           height='24px'

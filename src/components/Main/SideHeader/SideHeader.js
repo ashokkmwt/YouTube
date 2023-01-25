@@ -13,30 +13,9 @@ export default function SideHeader({ currentTab, setCurrentTab }) {
 
   const navigate = useNavigate();
 
-  const setRoutes = (index) => {
+  const setRoutes = (index, route) => {
     setCurrentTab(index);
-
-    index === 0 && navigate('/');
-
-    index === 1 && navigate('/shorts');
-
-    index === 2 && navigate('/subscription');
-
-    index === 3 && navigate('/library');
-
-    index === 4 && navigate('/history');
-
-    index === 5 && navigate('/watchlater');
-
-    index === 6 && navigate('/downloads');
-
-    index === 7 && navigate('/like');
-
-    index === 8 && navigate('/playlists');
-
-    index === 10 && navigate('/trending');
-
-    index > 10 && navigate('/404');
+    navigate(route);
   }
 
   return (
@@ -47,7 +26,7 @@ export default function SideHeader({ currentTab, setCurrentTab }) {
             {isSignIn ?
               <div
                 className={styles.topTabs}
-                onClick={() => setRoutes(index)}
+                onClick={() => setRoutes(index, tab.navigate)}
                 style={{ background: currentTab === index && 'rgba(255, 255, 255, 0.1)' }}
               >
                 <img width="100%" height="100%" src={tab.image} alt={tab.tabName} />
