@@ -122,10 +122,11 @@ export default function Header({ isHeader, setIsHeader }) {
         </div>
       }
       <div
-        style={width <= 600 ? { justifyContent: 'end', paddingRight: '5rem' } : null}
-        className={styles.middle}>
+        style={showInput ? { width: '100%', marginRight: '9rem' } : null}
+        className={styles.middle}
+      >
 
-        {/* reusable inpuut */}
+        {/* reusable input */}
         {(width >= 600 || showInput) && <Input showInput={showInput} setShowInput={setShowInput} />}
         {(width <= 600 && !showInput) &&
           <img width="100%" height="100%" src={Search} alt="search" onClick={() => setShowInput(true)} />}

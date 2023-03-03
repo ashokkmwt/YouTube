@@ -6,11 +6,11 @@ import BackArrow from "../../assets/icons/backArrow.svg";
 import HoverOn from "../HoverOn/HoverOn";
 import InputValueContext from "../../components/context/inputValueContext/InputValueContext";
 import MicValueContext from "../../components/context/micValueContext/MicValueContext";
-import { useWindowSize } from "react-use";
+// import { useWindowSize } from "react-use";
 
 export default function Input({ showInput, setShowInput }) {
 
-  const { width } = useWindowSize();
+  // const { width } = useWindowSize();
 
   const _value = useContext(InputValueContext);
 
@@ -53,7 +53,7 @@ export default function Input({ showInput, setShowInput }) {
   }, [micValue]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{ width: showInput && '100%' }}>
 
       {showInput &&
         <img
@@ -67,7 +67,6 @@ export default function Input({ showInput, setShowInput }) {
       }
 
       <div
-        style={width <= 600 ? { width: '100%' } : { width: '60%' }}
         className={styles.inputBar}
       >
         {isSearch && <img width="100%" height="100%" src={Search} alt="search" />}
@@ -106,6 +105,7 @@ export default function Input({ showInput, setShowInput }) {
         />
         {isHover && <HoverOn text={"Search"} />}
       </div>
+
     </div>
   );
 }

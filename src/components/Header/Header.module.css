@@ -85,11 +85,9 @@ header {
   width: 3.8rem;
   height: 3.8rem;
   cursor: pointer;
-  margin-left: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .mic:hover {
